@@ -8,13 +8,21 @@ console.log('Sample JavaScript HW#1');
 
 // имя переменной: myNum, значение: 10
 var myNum = 10;
+
 // имя переменной: myStr, значение: 'строка'
 var myStr = 'строка';
+
 // имя переменной: myBool, значение: true
 var myBool = true;
+
 // имя переменной: myArr, значения: 1, 2, 3, 4, 5
 var myArr = [1, 2, 3, 4, 5];
+
 // имя переменной myObj, значения: first: 'First Name', last: 'Last Name'
+var myObj = {
+  first: 'First Name',
+  last: 'Last Name'
+}
 
 /*
  * #2
@@ -25,6 +33,7 @@ var myArr = [1, 2, 3, 4, 5];
  */
 
 // decimal2
+var decimal2 = myNum.toFixed(2);
 
 /*
  * #3
@@ -35,6 +44,11 @@ var myArr = [1, 2, 3, 4, 5];
  */
 
 // i
+var i = 7;
+console.log(i++);
+console.log(++i);
+console.log(i--);
+console.log(--i);
 
 /*
  * #4
@@ -46,16 +60,22 @@ var myArr = [1, 2, 3, 4, 5];
  */
 
 // myTest
+var myTest = 20;
 
 // +=
+console.log(myTest += myNum);
 
 // –=
+console.log(myTest -= myNum);
 
 // *=
+console.log(myTest *= myNum);
 
 // /=
+console.log(myTest /= myNum);
 
 // %=
+console.log(myTest %= myNum);
 
 /*
  * #5
@@ -64,12 +84,20 @@ var myArr = [1, 2, 3, 4, 5];
  */
 
 // константа Pi → myPi
+var myPi = Math.PI;
+console.log(myPi);
 
 // округленное значение числа 89.279 → myRound
+var myRound = Math.round(89.279);
+console.log(myRound);
 
 // случайное число между 0..10 → myRandom
+var myRandom = Math.random()*10;
+console.log(myRandom);
 
 // 3 в 5 степени → myPow
+var myPow = Math.pow(3,5);
+console.log(myPow);
 
 /*
  * #6
@@ -81,6 +109,10 @@ var myArr = [1, 2, 3, 4, 5];
 // Мама мыла раму, рама мыла маму
 
 // strObj
+var strObj = {
+  str: 'Мама мыла раму, рама мыла маму',
+}
+strObj.length = strObj.str.length;
 
 /*
  * #7
@@ -90,6 +122,8 @@ var myArr = [1, 2, 3, 4, 5];
  */
 
 // isRamaPos
+var isRamaPos = strObj.str.indexOf('рама');
+console.log(isRamaPos);
 
 /*
  * #8
@@ -101,9 +135,13 @@ var myArr = [1, 2, 3, 4, 5];
  */
 
 // strReplace
+var strReplace = strObj.str.replace('мыла раму, рама мыла', 'моет раму, Рама держит');
+console.log(strReplace);
 
 /*
  * #9
  *
  * Преобразуйте любую строку в верхний, затем в нижний регистры, результат отобразите в консоли.
  */
+console.log(strObj.str.toUpperCase());
+console.log(strObj.str.toLowerCase());
